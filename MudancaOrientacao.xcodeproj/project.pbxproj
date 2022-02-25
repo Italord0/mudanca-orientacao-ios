@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4085C23827C8758F00F45E82 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085C23727C8758F00F45E82 /* BalanceView.swift */; };
+		4085C23A27C875B600F45E82 /* BalanceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4085C23927C875B600F45E82 /* BalanceView.xib */; };
 		57D441BD27ADFDC2000AD0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D441BC27ADFDC2000AD0BB /* AppDelegate.swift */; };
 		57D441BF27ADFDC2000AD0BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D441BE27ADFDC2000AD0BB /* SceneDelegate.swift */; };
 		57D441C127ADFDC2000AD0BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D441C027ADFDC2000AD0BB /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4085C23727C8758F00F45E82 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		4085C23927C875B600F45E82 /* BalanceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceView.xib; sourceTree = "<group>"; };
 		57D441B927ADFDC2000AD0BB /* MudancaOrientacao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MudancaOrientacao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D441BC27ADFDC2000AD0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57D441BE27ADFDC2000AD0BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				57D441C527ADFDC5000AD0BB /* Assets.xcassets */,
 				57D441C727ADFDC5000AD0BB /* LaunchScreen.storyboard */,
 				57D441CA27ADFDC5000AD0BB /* Info.plist */,
+				4085C23727C8758F00F45E82 /* BalanceView.swift */,
+				4085C23927C875B600F45E82 /* BalanceView.xib */,
 			);
 			path = MudancaOrientacao;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57D441C927ADFDC5000AD0BB /* LaunchScreen.storyboard in Resources */,
+				4085C23A27C875B600F45E82 /* BalanceView.xib in Resources */,
 				57D441C627ADFDC5000AD0BB /* Assets.xcassets in Resources */,
 				57D441C427ADFDC2000AD0BB /* Main.storyboard in Resources */,
 			);
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57D441C127ADFDC2000AD0BB /* ViewController.swift in Sources */,
+				4085C23827C8758F00F45E82 /* BalanceView.swift in Sources */,
 				57D441BD27ADFDC2000AD0BB /* AppDelegate.swift in Sources */,
 				57D441BF27ADFDC2000AD0BB /* SceneDelegate.swift in Sources */,
 			);

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -167,143 +167,85 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hQ4-Rt-iKm">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="820"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCT-iF-08n">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCT-iF-08n" customClass="BalanceView" customModule="MudancaOrientacao" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilW-ys-1NP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstItem="ilW-ys-1NP" firstAttribute="top" secondItem="lCT-iF-08n" secondAttribute="top" id="1MI-CB-C6I"/>
-                                                    <constraint firstAttribute="height" constant="100" id="JUX-aJ-uXk"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ilW-ys-1NP" secondAttribute="trailing" id="YyU-cE-LZb"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ilW-ys-1NP" secondAttribute="bottom" id="oWl-Zn-7eQ"/>
-                                                    <constraint firstItem="ilW-ys-1NP" firstAttribute="leading" secondItem="lCT-iF-08n" secondAttribute="leading" id="wiP-X4-IZf"/>
+                                                    <constraint firstAttribute="height" constant="100" id="05j-RI-14m"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="3qm-eU-UcE" appends="YES" id="kcC-ob-GFu"/>
+                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmf-ND-pZQ">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmf-ND-pZQ" customClass="BalanceView" customModule="MudancaOrientacao" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="120" width="414" height="100"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiJ-kR-uaf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstItem="SiJ-kR-uaf" firstAttribute="leading" secondItem="kmf-ND-pZQ" secondAttribute="leading" id="1PJ-l4-oV2"/>
                                                     <constraint firstAttribute="height" constant="100" id="CLC-5Y-fUe"/>
-                                                    <constraint firstItem="SiJ-kR-uaf" firstAttribute="top" secondItem="kmf-ND-pZQ" secondAttribute="top" id="LPw-Bu-QUQ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="SiJ-kR-uaf" secondAttribute="trailing" id="LjI-va-sOz"/>
-                                                    <constraint firstAttribute="bottom" secondItem="SiJ-kR-uaf" secondAttribute="bottom" id="T9q-al-SM5"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="nbs-3C-wm6" appends="YES" id="lDZ-Vv-aHK"/>
+                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltc-78-ARw">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltc-78-ARw" customClass="BalanceView" customModule="MudancaOrientacao" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="240" width="414" height="100"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHe-Ku-urd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="3FJ-QU-49s"/>
-                                                    <constraint firstItem="DHe-Ku-urd" firstAttribute="leading" secondItem="Ltc-78-ARw" secondAttribute="leading" id="7Mn-88-9jy"/>
-                                                    <constraint firstItem="DHe-Ku-urd" firstAttribute="top" secondItem="Ltc-78-ARw" secondAttribute="top" id="WaE-yy-mLT"/>
-                                                    <constraint firstAttribute="trailing" secondItem="DHe-Ku-urd" secondAttribute="trailing" id="fWw-N0-bDr"/>
-                                                    <constraint firstAttribute="bottom" secondItem="DHe-Ku-urd" secondAttribute="bottom" id="qIO-62-RCv"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="6pX-d8-IlQ" appends="YES" id="Vgh-l0-LrL"/>
+                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySq-PG-iri">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySq-PG-iri" customClass="BalanceView" customModule="MudancaOrientacao" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="360" width="414" height="100"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7f-iI-foV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstItem="W7f-iI-foV" firstAttribute="leading" secondItem="ySq-PG-iri" secondAttribute="leading" id="NTE-3V-oEK"/>
-                                                    <constraint firstAttribute="trailing" secondItem="W7f-iI-foV" secondAttribute="trailing" id="XD2-77-yWE"/>
                                                     <constraint firstAttribute="height" constant="100" id="bkM-84-D0O"/>
-                                                    <constraint firstAttribute="bottom" secondItem="W7f-iI-foV" secondAttribute="bottom" id="c3w-nl-kFB"/>
-                                                    <constraint firstItem="W7f-iI-foV" firstAttribute="top" secondItem="ySq-PG-iri" secondAttribute="top" id="g1H-8l-c4K"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="BGe-t8-xC8" appends="YES" id="Uf4-Aq-lZA"/>
+                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpc-w0-TFm">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpc-w0-TFm" customClass="BalanceView" customModule="MudancaOrientacao" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="480" width="414" height="100"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evL-Ca-8p7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstItem="evL-Ca-8p7" firstAttribute="leading" secondItem="lpc-w0-TFm" secondAttribute="leading" id="8o4-b0-9bL"/>
                                                     <constraint firstAttribute="height" constant="100" id="MGD-gk-32s"/>
-                                                    <constraint firstItem="evL-Ca-8p7" firstAttribute="top" secondItem="lpc-w0-TFm" secondAttribute="top" id="eV5-24-5ub"/>
-                                                    <constraint firstAttribute="trailing" secondItem="evL-Ca-8p7" secondAttribute="trailing" id="ln7-jp-fNw"/>
-                                                    <constraint firstAttribute="bottom" secondItem="evL-Ca-8p7" secondAttribute="bottom" id="qtp-Z3-mC5"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="M6u-Ez-VWQ" appends="YES" id="14K-Vi-ePu"/>
+                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1C-dw-zpv">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1C-dw-zpv" customClass="BalanceView" customModule="MudancaOrientacao" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="600" width="414" height="100"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTz-dp-li4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="GTz-dp-li4" secondAttribute="trailing" id="6qL-pL-aw8"/>
-                                                    <constraint firstItem="GTz-dp-li4" firstAttribute="leading" secondItem="F1C-dw-zpv" secondAttribute="leading" id="9gD-7N-CVZ"/>
                                                     <constraint firstAttribute="height" constant="100" id="XcY-n2-TbZ"/>
-                                                    <constraint firstItem="GTz-dp-li4" firstAttribute="top" secondItem="F1C-dw-zpv" secondAttribute="top" id="bwR-EY-mrd"/>
-                                                    <constraint firstAttribute="bottom" secondItem="GTz-dp-li4" secondAttribute="bottom" id="vvd-Wy-j5T"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="uFU-qe-kNC" appends="YES" id="EsR-gn-gYy"/>
+                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUu-pb-ZDg">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUu-pb-ZDg" customClass="BalanceView" customModule="MudancaOrientacao" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="720" width="414" height="100"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxJ-nz-snB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="NxJ-nz-snB" secondAttribute="bottom" id="Hxo-fd-99A"/>
-                                                    <constraint firstItem="NxJ-nz-snB" firstAttribute="top" secondItem="zUu-pb-ZDg" secondAttribute="top" id="flV-o1-YcQ"/>
-                                                    <constraint firstItem="NxJ-nz-snB" firstAttribute="leading" secondItem="zUu-pb-ZDg" secondAttribute="leading" id="fuh-cr-cyL"/>
                                                     <constraint firstAttribute="height" constant="100" id="i07-X6-JNj"/>
-                                                    <constraint firstAttribute="trailing" secondItem="NxJ-nz-snB" secondAttribute="trailing" id="lJy-0e-HSA"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="fMY-bP-vVm" appends="YES" id="V4f-YV-zw5"/>
+                                                </connections>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="lCT-iF-08n" firstAttribute="leading" secondItem="hQ4-Rt-iKm" secondAttribute="leading" id="AvH-wI-7Ny"/>
-                                            <constraint firstAttribute="trailing" secondItem="lCT-iF-08n" secondAttribute="trailing" id="LKS-9D-hba"/>
                                             <constraint firstItem="lCT-iF-08n" firstAttribute="top" secondItem="hQ4-Rt-iKm" secondAttribute="top" id="qjw-ql-5v4"/>
                                         </constraints>
                                     </stackView>
@@ -334,21 +276,98 @@
                             <constraint firstItem="Bco-Wb-yDH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zVP-FT-XIY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="verticalItem1" destination="lCT-iF-08n" id="p5k-EJ-Mz3"/>
+                        <outlet property="verticalItem2" destination="kmf-ND-pZQ" id="Md5-0b-Mmb"/>
+                        <outlet property="verticalItem3" destination="Ltc-78-ARw" id="JTw-Ia-WJO"/>
+                        <outlet property="verticalItem4" destination="ySq-PG-iri" id="DBF-E9-pMS"/>
+                        <outlet property="verticalItem5" destination="lpc-w0-TFm" id="fkY-qX-pOE"/>
+                        <outlet property="verticalItem6" destination="F1C-dw-zpv" id="1V4-yV-Lfb"/>
+                        <outlet property="verticalItem7" destination="zUu-pb-ZDg" id="Urc-bV-DFj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3qm-eU-UcE" userLabel="Item 1 tap">
+                    <connections>
+                        <segue destination="5jH-RJ-k1n" kind="show" id="JOO-hR-qvM"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="nbs-3C-wm6" userLabel="Item 2 tap">
+                    <connections>
+                        <segue destination="5jH-RJ-k1n" kind="show" id="rXg-qy-AbC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6pX-d8-IlQ" userLabel="Item 3 tap">
+                    <connections>
+                        <segue destination="5jH-RJ-k1n" kind="show" id="JCD-Lo-VK9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="BGe-t8-xC8" userLabel="Itam 4 tap">
+                    <connections>
+                        <segue destination="5jH-RJ-k1n" kind="show" id="1XV-xa-Cdh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="M6u-Ez-VWQ" userLabel="Item 5 tap">
+                    <connections>
+                        <segue destination="5jH-RJ-k1n" kind="show" id="WKM-WS-RDm"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="uFU-qe-kNC" userLabel="Item 6 tap">
+                    <connections>
+                        <segue destination="5jH-RJ-k1n" kind="show" id="RlA-bl-Ydk"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="fMY-bP-vVm" userLabel="Item 7 tap">
+                    <connections>
+                        <segue destination="5jH-RJ-k1n" kind="show" id="K1v-ER-gE6"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="66.964285714285708"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="UpD-HR-QVF">
+            <objects>
+                <viewController id="5jH-RJ-k1n" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ojT-NA-Jku">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tela de detalhe da conta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4o1-ch-rw1">
+                                <rect key="frame" x="8" y="8" width="398" height="792"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LNw-h8-CQe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4o1-ch-rw1" firstAttribute="leading" secondItem="LNw-h8-CQe" secondAttribute="leading" constant="8" id="Djt-gy-Tna"/>
+                            <constraint firstItem="LNw-h8-CQe" firstAttribute="bottom" secondItem="4o1-ch-rw1" secondAttribute="bottom" constant="8" id="bNp-tC-p8l"/>
+                            <constraint firstItem="4o1-ch-rw1" firstAttribute="top" secondItem="LNw-h8-CQe" secondAttribute="top" constant="8" id="bYW-8z-fRc"/>
+                            <constraint firstItem="LNw-h8-CQe" firstAttribute="trailing" secondItem="4o1-ch-rw1" secondAttribute="trailing" constant="8" id="lHz-jd-1ce"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="or1-vM-QOD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pee-TW-vgu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="67"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JOO-hR-qvM"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
